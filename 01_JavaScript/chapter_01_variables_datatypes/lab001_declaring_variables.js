@@ -61,10 +61,14 @@ if (true) {
 console.log("Outside block - var:", blockVar); // Works! var is function-scoped
 
 // Hoisting demonstration
-console.log("\n--- Hoisting Demo ---");
+console.log("\n--- Hoisting var Demo ---");
 console.log("hoistedVar before declaration:", hoistedVar); // undefined (hoisted)
 var hoistedVar = "I am hoisted";
 console.log("hoistedVar after declaration:", hoistedVar);
 
 // console.log(hoistedLet); // ReferenceError: Cannot access before initialization
 // let hoistedLet = "I am not hoisted";
+console.log("\n--- Hoisting let Demo ---");
+console.log("hoistedLet before declaration:", hoistedLet); // ReferenceError: Cannot access before initialization
+let hoistedLet = "I am not hoisted";
+console.log("hoistedLet after declaration:", hoistedLet);
